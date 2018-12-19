@@ -120,7 +120,42 @@ function paintMap() {
 	
 	// ALTERED VERSION OF SETCONTENT 
 	// sdk.setContent('<a href="' + address + '"><img src="' + mapsKey + '" /></a>');
-	sdk.setContent('<h2>' + address + '</h2><p>' + mapsKey + '</p>');
+	// sdk.setContent('<h2>' + address + '</h2><p>' + mapsKey + '</p>');
+	sdk.setContent(
+	'<table cellspacing="0" cellpadding="0" width="100%" align="left" border="0" style="background-color:#f2f2f2" bgcolor="#f2f2f2">' + 
+		'<tr align="center">' + 
+			'<td align="center" valign="top">' +         
+				'<table border="0" width="640" cellpadding="0" cellspacing="0" class="templateColumns100">' +
+					'<tr align="center">' + 
+						'<td align="center" valign="top">' + 
+							'<table width="100%" cellpadding="0" cellspacing="0" border="0">' + 
+								'<tr>' + 
+									'<td name="body-wallet-heading-text" id="body-wallet-heading-text" class="xspace-orhead_3_2d" align="center" valign="middle" style="padding-top:60px; padding-bottom:32px; font-family:Arial; font-size:18px; color:#333333; letter-spacing:0.3em;">' + 
+										address + 
+									'</td>' + 
+								'</tr>' + 
+								'<tr>' + 
+									'<td name="body-wallet-subheading-text" id="body-wallet-subheading-text" class="xspace-headtop_3_2d" style=" padding-top:15px; padding-bottom:30px; font-family:Arial; font-size:14px; color:#8b8b8b;" align="center">' + 
+										mapsKey + 
+									'</td>' + 
+								'</tr>' + 
+								'<tr>' + 
+									'<td height="40" align="center" valign="middle">' + 
+										'<a name="body-wallet-link" id="body-wallet-link" href="https://scv-stg.adidas.com/cdc/pass.action?ident=cncES&euci=%%=v(@EUCI)=%%&lang=es&order=%%=v(@orderNumber)=%%&date=%%=v(@validity_date)=%%" _label="applewallet"><img name="body-wallet-image" id="body-wallet-image" src="http://image.link.adidas.com/lib/fe6515707c62007e7715/m/2/ca3de34d-6a1f-4e9c-90fe-7cb9b1623531.png?b=1520451857000" _label="applewallet" border="0" alt="Apple Wallet" style="display:block;"></a>' + 
+									'</td>' + 
+								'</tr>' + 
+								'<tr>' + 
+									'<td height="55" align="left" valign="middle">' + 
+										'<img class="resizeImg" height="55" src="http://image.link.adidas.com/lib/fe6515707c62007e7715/m/1/37231f63-3f72-48f3-8047-2650e11742e8.gif" border="0" alt="" style="display:block;">' + 
+									'</td>' + 
+								'</tr>' + 
+							'</table>' +   
+						'</td>' + 
+					'</tr>' +
+				'</table>' +
+			'</td>' + 
+		'</tr>' +
+	'</table>');
 	sdk.setData({
 		address: address,
 		// width: width,
