@@ -57,7 +57,7 @@ function paintMap() {
 		// height: height,
 		// zoom: zoom,
 		// link: link,
-		// mapsKey: mapsKey
+		mapsKey: mapsKey
 	});
 	// localStorage.setItem('googlemapsapikeyforblock', mapsKey);
 }
@@ -70,7 +70,7 @@ sdk.getData(function (data) {
 	// link = data.link || '';
 	// mapsKey = data.mapsKey || localStorage.getItem('googlemapsapikeyforblock');
 	mapsKey = data.mapsKey;
-	paintSettings();
+	//paintSettings();
 	// paintSliderValues();
 	paintMap();
 });
