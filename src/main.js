@@ -50,7 +50,8 @@ function paintMap() {
 	// sdk.setContent('<a href="' + link + '"><img src="' + url + '" /></a>');
 	
 	// ALTERED VERSION OF SETCONTENT 
-	sdk.setContent('<a href="' + address + '"><img src="' + mapsKey + '" /></a>');
+	// sdk.setContent('<a href="' + address + '"><img src="' + mapsKey + '" /></a>');
+	sdk.setContent('<h2>' + address + '</h2><p>' + mapsKey + '</p>');
 	sdk.setData({
 		address: address,
 		// width: width,
