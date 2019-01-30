@@ -122,7 +122,7 @@ function paintMap() {
 	// sdk.setContent('<a href="' + address + '"><img src="' + mapsKey + '" /></a>');
 	// sdk.setContent('<h2>' + address + '</h2><p>' + mapsKey + '</p>');
 	sdk.setContent(
-	'<table cellspacing="0" cellpadding="0" width="100%" align="left" border="0" style="background-color:#000000" bgcolor="#000000">' + 
+	'<table cellspacing="0" cellpadding="0" width="100%" align="left" border="0" style="background-color:#f2f2f2" bgcolor="#f2f2f2">' + 
 		'<tr align="center">' + 
 			'<td align="center" valign="top">' +         
 				'<table border="0" width="640" cellpadding="0" cellspacing="0" class="templateColumns100">' +
