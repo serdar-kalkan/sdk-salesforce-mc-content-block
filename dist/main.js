@@ -90,18 +90,9 @@ function debounce (func, wait, immediate) {
 }
 
 function createWallet() {
-		// setData(dataObject, callback()). Required to retain the metada of the content block. In case of missing fields, there might be a loss of data.
-	sdk.setData({
-		title: title,
-		description: description
-	});
-	
 	title = document.getElementById('text-input-id-0').value;
 	description = document.getElementById('text-input-id-1').value;
-	
-		
 
-	
 	// ALTERED VERSION OF SETCONTENT & SETDATA
 	// setContent(content, callback()). Only content attribute value is passed. It sets content stored in the widget as the original HTML(+script) of the body content of content block: CnC_Pickup_Wallet_ES_Omni in Test BU
 	sdk.setContent(
@@ -139,7 +130,12 @@ function createWallet() {
 			'</td>' + 
 		'</tr>' +
 	'</table>');
-
+	
+	// setData(dataObject, callback()). Required to retain the metada of the content block. In case of missing fields, there might be a loss of data.
+	sdk.setData({
+		title: title,
+		description: description
+	});
 }
 
 sdk.getData(function (data) {
