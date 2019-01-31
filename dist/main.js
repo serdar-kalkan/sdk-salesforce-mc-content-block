@@ -139,8 +139,10 @@ function createWallet() {
 }
 
 sdk.getData(function (data) {
-	title = data.title;
-	description = data.description;
+	title = data.title || '';
+	description = data.description || '';
+	document.getElementById('text-input-id-0').value = title;
+	document.getElementById('text-input-id-1').value = description;
 	createWallet();
 });
 
