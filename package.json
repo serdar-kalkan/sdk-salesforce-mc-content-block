@@ -23,6 +23,8 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-node": "^8.0.1",
     "webpack": "^3.10.0",
     "webpack-css-loaders": "^1.0.0"
   }
